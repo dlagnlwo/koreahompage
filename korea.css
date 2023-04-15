@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0; padding: 0;
+    list-style: none; 
+    box-sizing: border-box;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+header {    
+    width: 100%; height: 100px;
+    background: black; color: white;
+    font-size: 2rem;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+header p {
+    width: 10%; height: 100%;
+    border: 0px solid white;
+}
+header .home {
+    
+}
+header .na {
+    width: 20%;
+}
+
+.at1 {
+    position: relative;
+    top: 0; left: 0;
+
+    width: 80%; height: 600px;
+    border: 0px solid black;
+    margin: 50px auto;
+}
+.at1 img {
+    width: 100%; height: 100%;
+}
+.at1 .btn {
+    position: absolute;
+    top: 50%; left: -5%;  
+    z-index: 1;  
+
+    width: 110%; height: 50px;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.at1 .btn li {
+    width: 5%; height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* 그림 6개짜리 박스  만들기 */
+.at1 .img6 {
+    width: 100%; 
+    /* height: 100px; */
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.at1 .img6 li {
+    width: 30%; height: 200px;
+    border: 0px solid red;
+    margin-bottom: 50px;
+
+    position: relative; top: 0; left: 0;
+    overflow: hidden;
+}
+.at1 .img6 li div {
+    width: 100%; height: 100%;
+    outline: 0px solid blue;
+}
+.at1 .img6 li div img {
+    width: 100%; height: 100%;
+}
+/* li에 오버하면 초록색(글자)이 top:0 */
+.at1 .img6 li:hover .img6_text {
+    top: 0;
+}
+.at1 .img6 li .img6_text {
+    background: rgba(0, 0, 0, 0.395);
+    position: absolute; top: 70%; left: 0;
+    transition: all 0.5s;
+}
+.at1 .img6 li .img6_text p {
+    color: white;
+    height: 40px; line-height: 40px;
+    text-align: center;
+}
+.at1 .img6 li .img6_text p:first-child {
+    margin-top: 10px;
+    font-family: hy견고딕;
+    font-size: 1.2rem;
+}
+.at1 .img6 li .img6_text p:last-child {
+    width: 120px;
+    margin: 10px auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.at1 .img6 li .img6_text p:last-child:hover {
+    background: cyan; color: black;
+}
